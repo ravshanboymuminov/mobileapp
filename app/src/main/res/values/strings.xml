@@ -7,4 +7,20 @@
 
     <string name="memberlink">Already a member? <a href='#'> Log in  </a> </string>
     <string name="get_started">Get Started</string>
+    <string name="next_button">Next ></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_invalid_email">Invalid email format</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_password_invalid">Password must be at least 8 characters</string>
+    <string name="error_remember_me_required">Please check the &quot;Remember me&quot; box</string>
+    <string name="error_terms_and_conditions_required">Please check the Terms and Conditions box</string>
+    <string name="success_signed_in">Signed in</string>
+    <string name="error_name_required">Full Name is required</string>
+    <string name="error_phone_number_required">Phone number must be at least 10 digits</string>
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="error_email_already_used">This email is already registered</string>
+    <string name="success_registration">Registration successful</string>
+
+
 </resources>

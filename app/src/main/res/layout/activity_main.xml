@@ -52,48 +52,80 @@
 
             android:text=" sign in to access your account"
             android:textColor="#252525"
-            android:textSize="14dp"
+            android:textSize="14sp"
 
             app:layout_constraintStart_toStartOf="parent" />
 
     </FrameLayout>
-
-    <EditText
-        android:id="@+id/emaill"
-        android:layout_width="304dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="@dimen/_325dp"
-        android:background="@drawable/style"
-        android:drawableEnd="@drawable/mail_24dp_5f6368_fill0_wght400_grad0_opsz24"
-        android:ems="10"
-        android:inputType="text"
-        android:paddingLeft="15dp"
-
-        android:paddingRight="10dp"
-        android:text=" Enter your email"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-4dp" /> <!-- Icon at the end -->
+    <TextView
+        android:id="@+id/tvSignInMessage"
+        style="@style/SubtitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="sign in to access your account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:ignore="NotSibling,UnknownId" />
 
 
-    <EditText
-        android:id="@+id/passwdd"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:paddingStart="15dp"
-        android:inputType="text"
-        android:text="Password"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/style"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="31dp"
-        tools:ignore="MissingConstraints"
-        android:drawableEnd="@drawable/lock_24dp_5f6368_fill0_wght400_grad0_opsz24"
-        android:paddingEnd="10dp"
-        /><![CDATA[
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/CustomTextInputLayout"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconDrawable="@drawable/mail_24dp_5f6368_fill0_wght400_grad0_opsz24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignInMessage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        style="@style/CustomTextInputLayout"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/purple_500"
+        app:boxStrokeWidth="1.0dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconDrawable="@drawable/lock_24dp_5f6368_fill0_wght400_grad0_opsz24"
+        app:endIconMode="custom"
+        app:endIconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout><![CDATA[
 
 
 
@@ -104,39 +136,41 @@
 
 
     />
-]]>
-    <CheckBox
-        android:id="@+id/myCheckBox"
-        android:layout_width="100dp"
-        android:layout_height="12dp"
+]]]><![CDATA[]>
 
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="9dp"
-        android:buttonTint="#CBCBCB"
+    ]]><CheckBox
+        android:id="@+id/cbRememberMe"
+        style="@style/SmallRegularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/black"
         android:text="Remember me"
-        android:layout_marginTop="466dp"
-        android:layout_marginLeft="12dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputPassword" />
 
 
     <TextView
-        android:id="@+id/myTextView"
-        android:layout_width="75dp"
-        android:layout_height="10dp"
-        android:layout_marginTop="467dp"
-        android:layout_marginLeft="225dp"
-        android:text="Forget password ?"
-        android:textSize="9dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/tvForgotPassword"
+        style="@style/SmallLinkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="32dp"
+        android:text="Forgot password?"
+        android:textColor="@color/purple_500"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputPassword" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="280dp"
         android:layout_height="60dp"
         android:layout_marginTop="660dp"
-        android:text="@string/next"
+        android:layout_marginStart="34dp"
+        android:text="next >"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -167,6 +201,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_marginStart="34dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Member ?"

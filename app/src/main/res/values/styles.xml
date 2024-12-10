@@ -1,3 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="WelcomeText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="GetStarted">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="SmallLinkText">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SmallRegularText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ForCheckBox">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="CustomTextInputLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PrimaryButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/purple_500</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
