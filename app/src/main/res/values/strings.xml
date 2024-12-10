@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">firstprojwct</string>
+    <string name="next"><![CDATA[Next >]]></string>
+    <string name='link2'>
+        By checking the box you agree to uor <a href='#'> Terms</a> and <a href='#'>Condition</a>
+    </string>
+
+    <string name="memberlink">Already a member? <a href='#'> Log in  </a> </string>
+    <string name="get_started">Get Started</string>
+</resources>

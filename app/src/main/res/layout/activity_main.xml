@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="800dp"
+
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:layout_marginLeft="40dp"
+    android:layout_width="360dp">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="321dp"
+        android:layout_height="251dp"
+        android:padding="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="40dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="321dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="507dp"
+            app:srcCompat="@drawable/mainreg"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="182dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="180dp"
+            android:text="Welcome back"
+
+            android:textColor="#252525"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="207dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="213dp"
+
+            android:text=" sign in to access your account"
+            android:textColor="#252525"
+            android:textSize="14dp"
+
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/emaill"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/_325dp"
+        android:background="@drawable/style"
+        android:drawableEnd="@drawable/mail_24dp_5f6368_fill0_wght400_grad0_opsz24"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+
+        android:paddingRight="10dp"
+        android:text=" Enter your email"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp" /> <!-- Icon at the end -->
+
+
+    <EditText
+        android:id="@+id/passwdd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:paddingStart="15dp"
+        android:inputType="text"
+        android:text="Password"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/style"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="31dp"
+        tools:ignore="MissingConstraints"
+        android:drawableEnd="@drawable/lock_24dp_5f6368_fill0_wght400_grad0_opsz24"
+        android:paddingEnd="10dp"
+        /><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+    />
+]]>
+    <CheckBox
+        android:id="@+id/myCheckBox"
+        android:layout_width="100dp"
+        android:layout_height="12dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="9dp"
+        android:buttonTint="#CBCBCB"
+        android:text="Remember me"
+        android:layout_marginTop="466dp"
+        android:layout_marginLeft="12dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="75dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginLeft="225dp"
+        android:text="Forget password ?"
+        android:textSize="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="660dp"
+        android:text="@string/next"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />  <!-- Makes URLs clickable -->
+    android:textColorLink="blue"  <!-- Optional: color for links --><![CDATA[
+    android:textSize="20sp"
+    />
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="726dp"
+        android:autoLink="web"
+        android:text="Register now"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Member ?"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="726dp"
+        android:layout_marginLeft="90dp"
+        tools:ignore="MissingConstraints" />  <!-- Makes URLs clickable -->
+    android:textColorLink="@color/linkColor"  <!-- Optional: color for links -->
+    android:textSize="16sp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
