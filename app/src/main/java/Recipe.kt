@@ -1,4 +1,7 @@
 package com.example.firstprojwct
 
-class Recipe {
-}
+// Recipe.kt
+data class Recipe(
+    val title: String,
+    val description: String
+)
